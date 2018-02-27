@@ -3,7 +3,7 @@ module CalliopeSlackBot
 
     class Calculate < SlackRubyBot::Commands::Base
       command 'calculate' do |client, data, _match|
-        client.say(channel: data.channel, text: '4')
+        client.say(channel: data.channel, text: "I don't know, I'm a dooooog!")
       end
     end
 
