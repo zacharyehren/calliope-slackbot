@@ -3,14 +3,14 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'dotenv'
 Dotenv.load
 
-require 'slack-calliopebot'
+require 'calliope-slackbot'
 require 'web'
 
 Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    SlackCalliopeBot::Bot.run
+    CalliopeSlackBot::Bot.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace
@@ -18,4 +18,4 @@ Thread.new do
   end
 end
 
-run SlackCalliopeBot::Web
+run CalliopeSlackBot::Web

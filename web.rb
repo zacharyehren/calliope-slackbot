@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-module SlackCalliopeBot
+module CalliopeSlackBot
   class Web < Sinatra::Base
     get '/' do
       'Math is good for you.'
