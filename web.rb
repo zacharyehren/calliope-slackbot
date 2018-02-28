@@ -3,7 +3,7 @@ require 'sinatra/base'
 module CalliopeSlackBot
   class Web < Sinatra::Base
     get '/' do
-      'Math is good for you.'
+      'Calliope The Great'
     end
   end
 end
